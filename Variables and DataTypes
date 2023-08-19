@@ -1,4 +1,4 @@
-//Name of the class should be as same as of the file name
+// The name of the java file should exactly be same as the class name inside it for the code to run
 public class variables{
   public static void main(String[] args){
     // declaring variables
