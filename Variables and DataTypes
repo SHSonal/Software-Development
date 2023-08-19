@@ -3,21 +3,54 @@ public class variables{
   public static void main(String[] args){
     // declaring variables
 	int marks1;
-	int marks2;
-  //initializing variables
+	int marks2; 
+
+   //initializing variables
 	marks1=75;
 	marks2=85;
-   // declaring and initializing variables in single line
+
+  // declaring and initializing variables in single line
 	int distanceAdam=0 , distanceLucy=0;
 	System.out.println(distanceAdam);
 	System.out.println(distanceLucy);
+
   // updating variables
 	distanceAdam=distanceAdam+15;
 	distanceLucy=15;
+
   //declaring variables in single line
 	String student1 = "Adam";
 	String student2 = "Lucy";
 	System.out.println(marks1);
 	System.out.println(student2);
+
+  //data types
+	int y = 999999;
+	long l = 100000000000;
+	short x = 1000;
+	float = 0.00f;
+	double d = 4.555666;
+	char a = 'e';
+	char b = 'ec';
+	char c = '1';
+ 	char d='102';
+	char e = '$';
+	System.out.println(student2);
+
+  // Arthemetic operations
+	int x=3;
+	int y=4;
+	double z=x/y; //no error
+
+	double x=3;
+	double y=5;
+	int z=x/y; //error incompatible data types
+
+	int x = 3;
+        double y = 4.0;
+        int z = x+y; // Error
+        System.out.println(z);
+    }
+}
 }
 }
