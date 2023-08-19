@@ -1,40 +1,20 @@
+public class variables{
+  public static void main(String[] args){
 
-
-num = 23456
-
-
-ones = num % 10
-
-print("Ones place digit:", ones)
-
-
-num = num // 10
-
-
-tens = num % 10
-
-print("Tens place digit:", tens)
-
-
-num = num // 10
-
-
-hundreds = num % 10
-
-print("Hundreds place digit:", hundreds)
-
-
-num = num // 10
-
-
-thousands = num % 10
-
-print("Thousands place digit:", thousands)
-
-
-num = num // 10
-
-
-ten_thousands = num % 10
-
-print("Ten thousands place digit:", ten_thousands)
+      int num = 23456;
+      int ones = num % 10;
+      System.out.println("Ones place digit:"+ones);
+      num = num /10;
+      int tens = num % 10
+      System.out.println("Tens place digit:"+tens)
+      num = num / 10;
+      int hundreds = num % 10;
+      System.out.println("Hundreds place digit:"+hundreds)
+      num = num / 10;
+      int thousands = num % 10;
+      System.out.println("Thousands place digit:"+thousands)
+      num = num / 10;
+      int ten_thousands = num % 10;
+     System.out.println("Ten thousands place digit:"+ten_thousands)
+}
+}
