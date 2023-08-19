@@ -12,3 +12,5 @@ public class variables{
 	String student2 = "Lucy";
 	System.out.println(marks1);
 	System.out.println(student2);
+}
+}
