@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-    int F, C;
+        int F, C;
         Scanner input = new Scanner(System.in);
         C=input.nextInt();
         F=9*C/5+32;
