@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int a=2;
+
+        char b='1';
+        System.out.println((int)b);
+        int c=a+(int)b;
+
+        System.out.println(c);
+// output would be 51
+
+    }
+}
+
