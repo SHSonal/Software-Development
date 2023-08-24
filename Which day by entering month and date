@@ -1,0 +1,58 @@
+import java.util.Scanner;
+class Source {
+	
+	public static void main(String args[]) {
+	
+		Scanner scan = new Scanner(System.in);
+		// Enter month
+		String month = scan.next();
+		// Enter date
+		int date = scan.nextInt();
+		
+		int day = 0;
+		switch (month) {
+			case "January":
+			    day = date;
+			    break;
+			case "February": 
+			    day = 31 + date;
+			case "March": 
+			    day = 31 + 30 + date;
+		    case "April": 
+			    day = 31 + 30 + 31 + date;
+			 case "May": 
+			    day = 31 + 30 + 31 + 30 + date;
+			    case "June": 
+			    day = 31 + 30 + 31 + 30 + 31+ date;
+			    case "July": 
+			    day = 31 + 30 + 31 + 30 + 31+ 30+ date;
+			    case "August": 
+			    day = 31 + 30 + 31 + 30 + 31+ 30+ 31 +date;
+			    case "September": 
+			    day = 31 + 30 + 31 + 30 + 31 + 30 + 31 + 30 +date;
+			    case "October": 
+			    day = 31 + 30 + 31 + 30 + 31 + 30+ 31+ 30+ 31 +date;
+			    case "November": 
+			    day = 31 + 30 + 31 + 30 + 31 + 30 + 31 + 30 +31+ 30+ date;
+			    case "December": 
+			    day = 31 + 30 + 31 + 30 + 31 + 30 + 31 + 30 +31+ 30+ 31+date;
+		// Write the rest of the logic
+		
+		}
+		
+		// From the day number of the year, finding the day no. of the week
+		int dayNumber = day % 7;
+		// recall, day 1 is Monday
+		
+		if (dayNumber == 6 || dayNumber == 7 ) {
+			System.out.print("Hurray!");
+		} else {
+			System.out.print("Ohhh! It's a work day :|");
+		}
+		
+		scan.close();
+		
+		
+	}
+	
+}
