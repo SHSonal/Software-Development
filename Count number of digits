@@ -1,0 +1,24 @@
+import java.util.*;
+public class Source {
+
+   public static void main(String[] args) {
+       int n;
+       Scanner input= new Scanner(System.in);
+       n=input.nextInt();
+       
+        int Count = 0;
+
+        if (n == 0) {
+            Count = 1;
+        } else {
+            do {
+                n /= 10; 
+                Count++;
+            } while (n!= 0);
+        }
+
+        System.out.println(Count);
+
+         }
+}
+
