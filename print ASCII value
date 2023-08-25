@@ -1,0 +1,12 @@
+import java.util.*;
+public class Source {
+
+   public static void main(String[] args) {
+      int start = (int) 'a'; 
+        int end = (int) 'z';  
+        while (start <= end) {
+            System.out.print((char) start+" ");
+            start++;
+        }
+   }
+}
