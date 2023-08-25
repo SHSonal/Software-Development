@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+class Source {
+  public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    // Enter the number
+    int number = scan.nextInt();  
+    int result = 1; 
+    int power = 1;
+    if(number >= 2) {
+        
+        while (power * 2 <= number) {
+            power *= 2;
+            result = power;
+        }
+
+        System.out.println(result);
+    
+    } else {
+      System.out.print("Please enter an integer >= 2");   
+    }
+    scan.close();
+  }
+}
