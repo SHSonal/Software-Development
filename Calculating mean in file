@@ -1,0 +1,29 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class bool {
+    public static void main(String[] args) {
+        String filename = "/Users/apple/Desktop/FSE/numbers.txt";
+        double sum = 0;
+        int count = 0;
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                double number = Double.parseDouble(line);
+                sum += number;
+                count++;
+            }
+
+            if (count > 0) {
+                double mean = sum / count;
+                System.out.println("Mean of the numbers: " + mean);
+            } else {
+                System.out.println("No numbers found in the file.");
+            }
+        } catch (IOException | NumberFormatException e) {
+            System.err.println("An error occurred: " + e.getMessage());
+        }
+    }
+}
